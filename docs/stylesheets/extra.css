@@ -1,0 +1,11 @@
+/* Footer Light mode */
+[data-md-color-scheme="default"] .md-footer {
+  background-color: #c6c6c6;
+  color: #121212;
+}
+
+/* Footer Dark mode */
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #121212;
+  color: #C6C6C6;
+}
