@@ -1,0 +1,1 @@
+# com.swift-navigator.integration
