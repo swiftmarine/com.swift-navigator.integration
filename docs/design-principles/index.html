@@ -1945,12 +1945,8 @@
         Note over Integration,Client: 200 OK: {uuid}
     end</code></pre>
 <ol>
-<li><strong>Initiation:</strong> Start with this Introduction section</li>
-<li><strong>Acknowledgement:</strong> Review authentication and environment setup</li>
-<li><strong>Processing:</strong> Process orchestration and dependency decomposition are complementary techniques used to manage, automate, and optimize complex, multi-step business or technical processes.</li>
-<li><strong>Notification:</strong> Refer to the Releases section to track changes</li>
-<li><strong>Confirmation:</strong> Navigate to the relevant API domain</li>
-<li><strong>Processing:</strong> Refer to the Releases section to track changes</li>
+<li><strong>Initiation:</strong> Initiation of the request, authentication and request validation</li>
+<li><strong>Completion:</strong> Response (including metadata for process tracking)</li>
 </ol>
 <h3 id="asynchronous-models">Asynchronous Models</h3>
 <p><strong>Asynchronous flows</strong> are used for long-running, stateful, or multi-step processes common in logistics (e.g. orchestration, external dependencies, or downstream processing). In these cases, the API acknowledges the request and processing continues out of band, with state changes communicated via ESB<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> events, SOA<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> decision components, callbacks, or polling endpoints.</p>
@@ -1979,15 +1975,9 @@
         Integration-&gt;&gt;-Client: Completion
     end</code></pre>
 <ol>
-<li><strong>Initiation:</strong> Start with this Introduction section</li>
-<li><strong>Acknowledgement:</strong> Review authentication and environment setup</li>
-<li><strong>Processing:</strong> Process orchestration and dependency decomposition are complementary techniques used to manage, automate, and optimize complex, multi-step business or technical processes.</li>
-<li><strong>Notification:</strong> Refer to the Releases section to track changes</li>
-<li><strong>Confirmation:</strong> Navigate to the relevant API domain</li>
-<li><strong>Processing:</strong> Refer to the Releases section to track changes</li>
-<li><strong>Completion:</strong> Refer to the Releases section to track changes</li>
-<li><strong>Processing:</strong> Refer to the Releases section to track changes</li>
-<li><strong>Completion:</strong> Refer to the Releases section to track changes</li>
+<li><strong>Initiation:</strong> Initiation of the request, authentication and request validation</li>
+<li><strong>Acknowledgement:</strong> Initial response (including UUID and metadata for process tracking)</li>
+<li><strong>Completion:</strong> Asynchronous response via webhooks (including UUID and metadata for process tracking)</li>
 </ol>
 <p>Both models may coexist within the same domain. Each API explicitly documents which interaction model it uses and how consumers are expected to track state, handle retries, and react to eventual completion or failure.
 Consumers should design integrations assuming eventual consistency where asynchronous flows are involved.</p>
