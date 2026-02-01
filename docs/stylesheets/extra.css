@@ -1,0 +1,142 @@
+/* Header Remove the Title next to Logo
+
+.md-header__title {
+  font-size: 0;
+}
+
+*/
+
+/* Page Remove the Title on the top */
+.md-typeset > h1 {
+  display: none;
+}
+
+/* Footer Font Family and Weight
+
+.md-footer {
+  font-family: "Geist Mono", monospace;
+  font-weight:700;
+}
+
+*/
+
+/* General Text Font Size and Weight */
+
+.md-typeset {
+  font-size: 0.70rem;
+  line-height: 1.6;
+}
+
+/* Footer Light Default 
+
+[data-md-color-scheme="default"] .md-footer {
+  background-color: var(--md-surface-background);
+  color: #e1e1e1;
+}
+
+*/
+
+/* Footer Dark Slate 
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: var(--md-surface-background);
+  color: #e1e1e1;
+}
+
+*/
+
+/* Table Style Prevent wrapping for the Key column */
+
+.md-typeset table td:first-child,
+.md-typeset table th:first-child {
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+/* Right hand side, Section Table of Contents Readability Improvement */
+
+.md-nav--secondary .md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+/* Left hand side, Parent Navigation Labels (no links) Readability Improvement */
+[data-md-color-scheme="default"]
+.md-nav__item--section > .md-nav__link {
+  color: #000000;
+}
+
+[data-md-color-scheme="slate"]
+.md-nav__item--section > .md-nav__link {
+  color: #ffffff;
+}
+
+/* Footer Brand Logo Image, at the bottom of all pages */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand img {
+  height: 96px;
+  width: auto;
+}
+
+.footer-brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Box used for API Operations and Responses */
+
+.badge {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  border-radius: 0.3em;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-get {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-post {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.badge-put {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.badge-patch {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.badge-delete {
+  background-color: #fdecea;
+  color: #b71c1c;
+}
+
+.badge-2xx {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-4xx {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.badge-5xx {
+  background-color: #fdecea;
+  color: #b71c1c;
+}
+
